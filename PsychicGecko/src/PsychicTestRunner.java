@@ -88,11 +88,11 @@ public class PsychicTestRunner
 //    }
     
     
-    if ((args.length == 1) && (args[0].equals("-g")))
-    {
+   // if ((args.length == 1) && (args[0].equals("-g")))
+    //{
       world.show();
-    }
-    else
+   // }
+    /*else
     {
       for (int i = 0 ; i < steps; i++)
       {
@@ -112,6 +112,6 @@ public class PsychicTestRunner
         System.out.println("PsychicGecko @ " + p.getLocation() 
                    + ", bearing " + p.getDirection());
       }
-    }
+    }*/
     }
 }
