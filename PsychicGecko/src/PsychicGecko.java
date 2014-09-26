@@ -221,10 +221,14 @@ public class PsychicGecko extends Critter {
 
   public boolean beanIsNeighboringSecondGecko(Location from, Location loc2) {
     System.out.println("location checks beanNeighbors gecko" + from + otherLocation);
-    if (from == otherLocation) {
-      return true;
+    ArrayList<Location> locations2 = getGrid().getOccupiedAdjacentLocations(from);
+    for (int i = 0; i < locations2.size();i++) {
+      if(locations2.get(i) == otherLocation) {
+        return true;
+      }
     }
     return false;
+    
   }
 
   public boolean isFlowerNeighbor(Location loc1) {
