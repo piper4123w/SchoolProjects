@@ -42,19 +42,20 @@ public class PsychicGeckoTester
     public static void main(String[] args)
     {
         ActorWorld world = new ActorWorld();
-        world.add(new Location(1,1), new PsychicGecko());
-        world.add(new Location(8,7), new PsychicGecko());
+        world.add(new Location(4,0), new PsychicGecko());
+        world.add(new Location(4,8), new PsychicGecko());
 
-        world.add(new Location(1,5), new Rock(Color.RED));
-        world.add(new Location(2,8), new Rock(Color.BLUE));
-        world.add(new Location(3,2), new Rock(Color.ORANGE));
-        world.add(new Location(4,7), new Rock(Color.MAGENTA));
-        world.add(new Location(5,0), new Rock(Color.ORANGE));
+        world.add(new Location(4,4), new Rock(Color.RED));
+        world.add(new Location(5,4), new Rock(Color.BLUE));
+        world.add(new Location(3,4), new Rock(Color.ORANGE));
+        world.add(new Location(5,3), new Rock(Color.MAGENTA));
+        world.add(new Location(5,2), new Rock(Color.ORANGE));
         world.add(new Location(5,5), new Rock(Color.PINK));
-        world.add(new Location(6,7), new Rock(Color.CYAN));
-        world.add(new Location(6,2), new Rock(Color.YELLOW));
-        world.add(new Location(7,8), new Rock(Color.RED));
-        
+        world.add(new Location(5,6), new Rock(Color.CYAN));
+        world.add(new Location(3,3), new Rock(Color.YELLOW));
+        world.add(new Location(3,2), new Rock(Color.RED));
+        world.add(new Location(3,5), new Rock(Color.ORANGE));
+        world.add(new Location(3,6), new Rock(Color.PINK));
         world.show();
     }
 }
